@@ -1,0 +1,20 @@
+{
+  "name": "chat-widget",
+  "version": "1.0.0",
+  "description": "chat widget",
+  "main": "chat.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "devStart": "nodemon server.js"
+  },
+  "author": "Michelle",
+  "license": "ISC",
+  "dependencies": {
+    "compression": "^1.7.4",
+    "socket.io": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

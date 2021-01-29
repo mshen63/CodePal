@@ -1,0 +1,124 @@
+
+    @import url("https://fonts.googleapis.com/css?family=Lato:400,700");
+    html{
+      font-family: 'Domine', sans-serif
+
+    }
+
+    body {
+      padding: 0;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1{
+      text-align: center;
+
+    }
+    #message-container {
+      width: 80%;
+      max-width: 1200px;
+      max-height: 800px;
+      display: flex;
+      flex-direction: column;
+      padding: 10px;
+      overflow:scroll;
+      overflow-x:hidden;
+    }
+
+    #message-container>div {
+
+
+      margin: 0px;
+      padding: 0px;
+
+
+    }
+
+    div.adminmessage{
+      color: #284b63;
+      max-width: 600px;
+      padding: 10px 10px 10px 12px;
+      text-align:center;
+
+    }
+
+    div.yourmessage, div.othermessage{
+      max-width: 450px;
+      word-wrap: break-word;
+      margin-bottom: 20px;
+      line-height:24px;
+    }
+    div.yourmessage{
+
+      color: #F9FBFF;
+        background: #cc978e;
+        float: right;
+        padding: 10px 10px 10px 12px;
+        border-radius: 20px;
+        font-size: 1em;
+        position: relative;
+    }
+
+    div.outerdiv{
+        padding: 0px;
+        margin: 0px;
+    }
+
+    div.admin{
+      display: flex;
+      justify-content: center;
+    }
+
+    div.othermessage{
+        color: #F9FBFF;
+        background: #284b63;
+        padding: 10px 10px 10px 12px;
+        border-radius: 20px;
+        font-size: 1em;
+        float: left;
+        position: relative;
+
+    }
+
+    #send-container {
+      position: fixed;
+      padding-bottom: 30px;
+      bottom: 0;
+      background-color: white;
+      max-width: 1200px;
+      width: 80%;
+      display: flex;
+    }
+
+    #message-input {
+      flex-grow: 1;
+    }
+
+    #chatBut{
+      border-radius: 50%;
+      width: 100px;
+      height: 100px;
+      position: fixed;
+      top: 3%;
+      left: 2%;
+      background: #CC978E;
+      border: #CC978E;
+      color: white;
+      letter-spacing: 3px;
+      font-size: 20px;
+      -webkit-transition: all 1s ease;
+      -moz-transition: all 1s ease;
+      -o-transition: all 1s ease;
+      transition: all 1s ease;
+      font-family: 'Montserrat', sans-serif;
+      cursor: pointer;
+      z-index: 10;
+    }
+    #chatBut:focus {
+      outline:0;
+    }
+    #chatBut:hover{
+      background: #f39c6b;
+    }
